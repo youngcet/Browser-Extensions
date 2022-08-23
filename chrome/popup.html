@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>clipboard Text</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+		<p class="heading" hidden>Use the forms below for programmatic clipboard access or invoke standard copy/cut/paste operations with your keyboard.</p>
+		<section hidden>
+		  <label><input type="radio" name="api" value="sync"> Use older, synchronous API</label><br/>
+		  <label><input type="radio" name="api" value="async" checked> Use newer, asynchronous API</label>
+		</section>
+	<div class="limiter">
+			
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+						<section>
+								<h2>Paste text</h2>
+								<p>Do not type text into the box, you only need to paste the text that you copied!<br><b style='color:red'>YOU NEED TO ENTER YOUR PIN BEFORE YOU PASTE TEXT<b>.</p>
+								<p>
+								  <button class="js-emailcopybtn btn btn-default" hidden></button>
+								</p>
+							  </section>
+							  
+							  <p id="logTarget">
+							</p>
+				</div>
+
+				<form>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input type="text" id="pin" placeholder="Your pin"> 
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" ></div>
+						<textarea class="js-cuttextarea form-control" id="text" style="padding:10px" cols="50" rows="5" placeholder="Paste text here"></textarea>
+						<span class="focus-input100"></span>
+						<p>
+								<button class="js-textareacutbtn btn btn-default" hidden>Cut text programatically</button>
+							  </p>
+					</div>
+
+					<div class="container-login100-form-btn">
+						
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							
+						</span>
+						<a class="txt2" href="#">
+							
+						</a>
+					</div>
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="#">
+							
+							
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<script src="popup.js">
+</script>
+</body>
+</html>
